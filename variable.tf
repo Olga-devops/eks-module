@@ -7,10 +7,10 @@ variable "subnet_ids" {
     description = "– (Required) List of subnet IDs. "
 }
 
-#variable "security_group_ids" {
-#     type = "list"
-#     description = "– (Optional) List of security group"
-# }
+variable "security_group_ids" {
+     type = "list"
+     description = "– (Optional) List of security group"
+ }
 
 variable "ssh_key_location" {
     type = "string"
@@ -28,17 +28,17 @@ variable "instance_type" {
 }
 
 variable "node_desired_capacity" {
-    type = ""
+    type = "string"
     description = "- (Required) Desired number of worker nodes"
 }
 
 variable "node_min_size" {
-    type = ""
+    type = "string"
     description = "(Required) Minimum number of worker nodes"
 }
 
 variable "node_max_size" {
-    type = ""
+    type = "string"
     description = " - (Required) Maximum number of worker nodes"
 }
 
