@@ -28,9 +28,9 @@ module "cluster-eks" {
   cluster_name = ""
   cluster_version = "1.15"
   instance_type = ""
-  asg_desired_capacity = ""
-  asg_min_size = ""
-  asg_max_size = ""
+  node_desired_capacity = ""
+  node_min_size = ""
+  node_max_size = ""
   security_group_ids = ["sg-"]
 }
 ```
